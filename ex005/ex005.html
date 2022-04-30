@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a Usar o DOM</title>
+    
+</head>
+<body>
+    
+    <h1>Usando o DOM</h1>
+
+    <p>olá, o que você está estudando?</p>
+    <p>Estou aprendendo <strong>Javascript</strong> no CursoEmVideo</p>
+
+    <script>
+        var corpo = window.document.body // Declarei a variável corpo e localizei ela pelo DOM
+        corpo.style.backgroundColor = '#ffff0099'
+        corpo.style.fontSize = '1.3em'
+        corpo.style.fontFamily = 'arial'
+
+        var p = window.document.getElementsByTagName('p')[1] 
+        /* Declarei a variável 'p' e localizei ela pelo DOM, usando os colchetes para indicar que é a primeira, a contagem começa do zero em diante, 0=primeira tag, 1=segunda tag, 2=terceira tag....*/
+        
+        window.document.write(p.innerHTML) 
+        /*innerText so copia o texto da tag, e o innerHTML insere a tag com suas formatações */
+
+        p.style.backgroundColor='white'
+        
+    </script>
+    
+</body>
+</html>
